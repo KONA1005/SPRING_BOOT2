@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 import com.board.domain.BoardDTO;
 
+
 @Mapper
 public interface BoardMapper {
 
@@ -17,8 +18,8 @@ public interface BoardMapper {
 
 	public int deleteBoard(Long idx);
 
-	public List<BoardDTO> selectBoardList();
+	public List<BoardDTO> selectBoardList(BoardDTO params);
 
-	public int selectBoardTotalCount();
+	public int selectBoardTotalCount(BoardDTO params);
 
 }
